@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 
+    Author:施迎楠
+    BuildDate:2019-7-1
+    Version:2.0
+    Function:首页
+ -->
+<!--head-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>消息设置</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+          <![endif]-->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。*/
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            /* background: linear-gradient(37deg, #FD465F 0%, #FF8080 100%); */
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        ::-moz-selection {
+            text-shadow: none;
+        }
+
+        ::selection {
+            text-shadow: none;
+        }
+
+        .setting_sort {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .setting_sort ul li {
+            width: 290px;
+            height: 65px;
+            padding: 15px 20px;
+            margin: 0 auto 15px;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+
+        .setting_sort ul li p:first-child {
+            font-size: 14px;
+            /* color: #F75B5B; */
+            margin-bottom: 5px;
+        }
+
+        .setting_sort ul li p:last-child {
+            font-size: 12px;
+            /* color: #F75B5B; */
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+
+        .setting_sort_left {
+            width: 180px;
+            float: left;
+        }
+
+        .setting_sort_right {
+            width: 50px;
+            float: right;
+        }
+
+        .setting_btn {
+            width:60px;
+            height: 25px;
+            padding: 1px;
+            border-radius: 60px;
+            background-color: #999;
+            transition: padding-left 0.2s linear;
+            -webkit-transition: padding-left 0.2s linear;
+        }
+
+        .setting_circle {
+            display: inline-block;
+            width: 40px;
+            height: 23px;
+            border-radius: 40px;
+            background: #fff;
+        }
+
+        .tipOpen {
+            /* background-color: #FF777B; */
+            background-color: rgb(11, 165, 11);
+            padding-left: 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="number_header_1">
+        <div class="container">
+            <div class="number_header_2">
+                <a href="../html/mine.html" style="display:block;width:50px;"> <img src="../img/back.png"
+                        style="width:50%;height: 50%;margin-top:13px;"> </a>
+                <p style="font-size: 150%;display:block;margin-top: 10px;margin-left: 60px;">消息</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <p style="font-size: 120%;display:block;margin-top: 10px;">是否接收系统消息</p>
+
+    </div> -->
+    <div class="setting_sort">
+        <ul>
+            <li>
+                <div class="setting_sort_left">
+                    <p style="font-size: 120%">是否接收系统消息</p>
+                </div>
+                <div class="setting_sort_right">
+                    <div class="setting_btn">
+                        <em class="setting_circle"></em>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-top:-30px;height: 10px;background:rgb(240, 240, 240);">
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        $('.setting_btn').on('click', function () {
+            var $this = $(this);
+            $this.toggleClass('tipOpen');
+        })
+    </script>
+</body>
+
+</html>

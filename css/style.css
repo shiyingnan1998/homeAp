@@ -1,0 +1,409 @@
+/* 首页 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ html,body{
+    height: 100%;
+}
+  a:active {
+    text-decoration: none;
+}
+
+a:link { 
+    color:rgb(53, 53, 53);
+    } 
+    a:visited { 
+        color:rgb(53, 53, 53);
+    } 
+    a:hover { 
+        cursor:pointer;
+        color:rgb(53, 53, 53);
+    } 
+
+.con{
+    /*保证footer是相对于container位置绝对定位*/
+    position:relative;  
+    width:100%;
+    min-height:100%;
+    /*设置padding-bottom值大于等于footer的height值，以保证main的内容能够全部显示出来而不被footer遮盖；*/  
+    padding-bottom: 100px;  
+    box-sizing: border-box;
+} 
+
+#footer{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    overflow:hidden;
+    /* background:#6cf; */
+    display: flex;
+    flex-direction: row;
+    border:solid 0px;
+    /* border-radius: 40px; */
+    box-shadow: 0px 0px 3px 3px rgb(224, 224, 224);
+    margin-bottom: -5px;
+    
+}
+.foot {
+    text-align: center;
+}
+.foot_img{
+    width:40%;
+    height:40%;
+    color:white;
+    margin-top: 3px;
+}
+.home_p{
+    font-size: 80%;
+    display: block;
+    margin-left: -2px;
+    /* margin-bottom: -3px; */
+    margin-top: -10px;
+    padding: 5px;
+}
+.home_p2{
+    font-size: 80%;
+    display: block;
+    /* margin-left: -2px; */
+    margin-top: 5px;
+    margin-left: -5px;
+    /* margin-bottom: -3px; */
+}
+.view{
+    margin-left: 160px;
+    margin-top: 210px;
+    position: absolute;
+    z-index: 10;
+    /* margin-top:120px; */
+}
+#vr_img{
+    width:40px;
+    
+}
+
+.town{
+margin-left: 30px;
+}
+.essay{
+    margin-right: 60px;
+}
+.collection{
+    margin-left: 20px;
+}
+/* foot end */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.home_mainbar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.mainbar1{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+}
+.mainbar2{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+}
+
+.progress_bar {
+    /* width: 300px;
+    height: 30px; */
+    background-color: #ddd;
+    border-radius: 20px;
+   }
+.skills {
+    line-height: 8px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    /* 进度条的宽度 */
+    background-color: #4CAF50;
+    font-size: 50%;
+   }
+.main_div{
+    border:solid 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 140px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+
+}
+.main_img{
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+   }
+.img_div{
+    margin-top: 5px;
+    text-align: center; 
+} 
+
+
+/* main end */
+/* 首页 end */
+
+/* 文章页 */
+.item_img{
+    /* margin-top: 20px; */
+    /* border-radius: 30px; */
+    width:100%;
+    height: 200px;
+    /* height: 20%; */
+}
+#carousel-example-generic{
+    margin-top: 5px;
+}
+.hr_style{
+    size:2;
+    width: 100%;
+    margin-top: 10px;
+}
+/* .essay_mainbar_main{
+    margin-top: -10px;
+}*/
+/* .essay_mainbar{
+display: flex;
+flex-direction: row;
+} */
+.essay_img{
+    width:30%;
+    border-radius: 10px;
+} 
+.essay_p_div{
+    margin-left: 130px;
+    margin-top: -50px;
+}
+.div_hr{
+    margin-top: 5px;
+    width: 100%;
+    background: rgb(235, 235, 235);
+    height:10px;
+
+}
+.essay_time{
+    display: block;
+    margin-left: 300px;
+}
+.essay_mainbar{
+    margin-top: 20px;
+}
+.essay_sapn_img{
+    width: 15px;
+}
+.select_btn{
+    margin-left: 100px;
+}
+/* essay end */
+
+/* essay_next */
+.next_img{
+    width:20px;
+    display: block;
+    margin-left: -20px;
+}
+.nextmain_img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: -15px;
+ }
+  .order .line {
+    display: inline-block;
+    width: 50px;
+    border-top: 1px solid #ccc ;
+ }
+ .order .txt {
+    color: #686868;
+    vertical-align: middle;
+ }
+ .essay_avatar{
+    width:35px; 
+    height:35px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    display: block;
+    /* margin-top: -90px;
+    margin-left: 30px; */
+ }
+ .essay_next_comment{
+     display: flex;
+     flex-direction: row;
+     margin-top: 10px;
+ }
+.essay_p{
+    margin-top: 5px;
+    margin-left: 20px;
+    line-height: 10px;
+}
+.essay_reply{
+    margin-left: 90px;
+    margin-top: 5px;
+}
+.essay_menu{
+    margin-left: 20px;
+}
+.feedback{
+    background-color: #f0f0f0;
+    padding-top: 5px;
+    /* padding-bottom: ; */
+    padding-left: 5px;
+    width: 250px;
+    margin-left: 60px;
+    padding-top: 5px;
+
+
+}
+
+
+/* essay_next end */
+
+/* login */
+.login_img{
+    width: 100%;
+}
+.login_mainbar{
+    margin-top: 160px;
+}
+
+/* .login_form{
+margin-left: 54px;
+} */
+
+#col-md-1{
+    margin-left: 39px;  
+}
+
+
+
+#code{
+    margin-left: 165px;
+    margin-top: -35px;
+}
+
+#form-group{
+    margin-bottom: 30px;
+}
+#login_btn{
+    background-color:rgb(27, 92, 53);
+    box-shadow: 0px 0px 5px 3px rgb(219,219,219);
+    border-radius: 20px;
+}
+/* login end */
+
+/* mine */
+.avatar{
+    width:50px; 
+    height:50px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    /* display: block;
+    margin-top: -90px;
+    margin-left: 30px; */
+}
+.leave_comment{
+    margin-top: 40px;
+}
+.do_img{
+    width:8%;
+    margin-left:10px; 
+}
+.mine_header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.mine_p{
+    margin-top: -8px;
+    margin-left: 20px;
+}
+/* mine end */
+
+/* foot */
+#wrapper03{
+margin-top: 20px;
+}
+.foot_mainbar{
+    margin-top: 10px;
+    padding: 15px;
+    border:solid 0px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 5px rgb(226, 226, 226);
+}
+/* foot end */
+
+/* foot_next */
+.share_img{
+    width: 20px;
+    margin-left:280px;
+
+}
+.foot_next_mainbar{
+    margin-top: 10px;
+}
+/* foot_next end */
+
+/* change_number */
+.number_header_1{
+    background: #ececec;
+  
+}
+.number_header_2{
+    display: flex;
+    flex-direction: row;
+}
+#changenumber_btn{
+    margin-top: -110px;
+    margin-left: 250px;
+}
+/* change_number end */
+
+/* feedback */
+#feedback_btn{
+    background-color: #a5a5a5;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#comment_btn{
+    background-color: #a5a5a5;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+/* feedback end */
+
+/* about_us */
+.about_us_p{
+    padding-bottom: 170px;
+    padding-top: 10px;
+}
+/* about_us end */
+
+/* message */
+.message_mainbar{
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+    margin-left: 20px;
+}

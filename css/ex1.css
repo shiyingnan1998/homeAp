@@ -1,0 +1,115 @@
+#panorama {
+    width: 360px;
+    height: 640px;
+    /* width:100%;
+    height: 100%;  */
+    position: relative;
+    margin-top: -7px;
+    margin-left: -10px;
+}
+
+/* 跳转 */
+.custom-hotspot {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: url("../img/destination.png") no-repeat;
+}
+
+/* 热点显示信息 */
+.custom-hotspot1 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: url("../img/hot.png") no-repeat;
+}
+
+
+#d1 {
+    height: 15px;
+    width: 15px;
+    /* background: red; */
+    background: url(../img/already_map);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 8%;
+    left: 30%;
+}
+
+#d2 {
+    height: 15px;
+    width: 15px;
+    /* background: grey; */
+    background: url(../img/map);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 18%;
+    left: 20%;
+}
+
+#d3 {
+    height: 15px;
+    width: 15px;
+    /* background: grey; */
+    background: url(../img/map);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 28%;
+    left: 10%;
+}
+
+.d_img {
+    display: block;
+    width: 10px;
+    height: 10px;
+    /* border-radius: 10px; */
+    /* margin-top: -1px; */
+}
+
+a {
+    display: block;
+    height: 150px;
+    width: 100px;
+    margin-top: -1px;
+    box-shadow: 0px 0px 2px 2px rgb(219,219,219);
+}
+
+#d {
+    height: 150px;
+    width: 100px;
+    background: url("../img/b_img.jpg") no-repeat;
+    position: relative;
+    position: absolute;
+    left: 70%;
+    bottom: 75.5%;
+}
+
+div.custom-tooltip span {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: default;
+}
+
+div.custom-tooltip:hover span {
+    visibility: visible;
+}
+
+div.custom-tooltip:hover span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    bottom: -20px;
+    left: -10px;
+    margin: 0 50%;
+}

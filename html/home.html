@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 
+    Author:施迎楠
+    BuildDate:2019-7-1
+    Version:2.0
+    Function:首页
+ -->
+<!--head-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" style="width:240px;border-radius:40px;height:25px;" class="form-control"
+                    placeholder="搜索" id="search">
+            </div>
+
+            <!-- 消息提醒 点击之后跳转到信息页 -->
+            <div class="message" style="margin-left:20px;">
+                <a href="../html/message.html"><img src="../img/message.png" style="width:55%;"></a>
+            </div>
+        </div>
+
+        <!-- mainbar -->
+        <div class="home_mainbar">
+
+            <!-- mainbar1 上边 -->
+            <div class="mainbar1">
+
+                <!-- main_div 左边 -->
+                <!-- 点击图片跳转到详情页 -->
+                <div class="main_div">
+                    <div class="img_div">
+                        <a href="../html/home_next.html"><img src="../img/1.jpg" class="main_img"id="img_1"></a>
+                        <p></p>
+                        <!-- <p style="font-size:90%">xx省xx村xx个观测点</p> -->
+                    </div>
+
+                    <div class="home_p">
+                        <p style="font-size:90%" id="home_p1">xx省xx村xx个观测点</p>
+                    </div>
+                </div>
+
+                <!-- main_div 中间 -->
+                <div class="main_div">
+                    <div class="img_div">
+                        <a href="#"><img src="../img/2.jpg" class="main_img"></a>
+                        <p></p>
+                    </div>
+                    <div class="home_p">
+                        <p style="font-size:90%">浙江省杭州市良渚村5个观测点12个热点</p>
+                    </div>
+                </div>
+
+                <!-- main_div 右边 -->
+                <div class="main_div">
+                    <div class="img_div">
+                        <a href="#"><img src="../img/2.jpg" class="main_img"></a>
+                        <p></p>
+                    </div>
+                    <div class="home_p">
+                        <p style="font-size:90%">浙江省杭州市良渚村5个观测点12个热点</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mainbar2 下边 -->
+            <div class="mainbar2">
+
+                <!-- main_div 左边 -->
+                <div class="main_div">
+                    <div class="img_div">
+                        <a href="#"><img src="../img/3.jpg" class="main_img"></a>
+                        <p></p>
+                    </div>
+                    <div class="home_p">
+                        <p style="font-size:90%">浙江省杭州市良渚村5个观测点12个热点</p>
+                    </div>
+                </div>
+
+                <!-- main_div 中间 -->
+                <div class="main_div">
+                    <div class="img_div">
+                        <a href="#"><img src="../img/3.jpg" class="main_img"></a>
+                        <p></p>
+                    </div>
+                    <div class="home_p">
+                        <p style="font-size:90%">浙江省杭州市良渚村5个观测点12个热点</p>
+                    </div>
+                </div>
+
+                <!-- main_div 右边 -->
+                <div class="main_div">
+                    <div class="img_div">
+                        <a href="#"><img src="../img/4.jpg" class="main_img"></a>
+                        <p></p>
+                    </div>
+                    <div class="home_p">
+                        <!-- <div class="progress_bar">
+                            <div class="skills loading">70%</div>
+                        </div> -->
+                        <!--进度条 -->
+                        <p style="font-size:90%">浙江省杭州市良渚村5个观测点12个热点</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <!-- vr -->
+    <div class="view">
+        <a href="../html/ex1.html" style="display:block;height: 55px;">
+            <img src="../img/360_vr.png" id="vr_img">
+            <p style="font-size: 80%;color: #189b0b;display:block;margin-left:10px;">VR</p>
+        </a>
+    </div>
+    <!-- vr end -->
+    <div class="sidebar"></div>
+</body>
+<script src = "https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src = "../js/home.js"></script>
+</html>

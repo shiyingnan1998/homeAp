@@ -1,0 +1,56 @@
+<html>
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		 
+		<body>
+		 
+		<div id="play">
+			<div id="ht" hidden="hidden">http://www.baidu.com</div>
+			<a id="t1" href="http://www.baidu.com">
+				<img id="t2" src="1.jpg" width="100" height="150">
+				<h3 id="t3">1.jpg</h3>
+			</a>
+		 
+			<ul>
+				<li class="item">
+					<div class="url" hidden="hidden">http://www.sina.com</div>
+					<div>
+						<a id="a1">
+							<img id="b1" src="2.jpg" width="100" height="150">
+							<h3 id="c1">2.jgp</h3>
+						</a>
+					</div>
+				</li>
+		 
+				<li class="item">
+					<div class="url" hidden="hidden">http://www.qq.com</div>
+					<div>
+						<a id="a2">
+							<img id="b2" src="3.jpg" width="100" height="150">
+							<h3 id="c2">3.jgp</h3>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		 
+		<script>
+			$(document).ready(function() {
+				$(".item").click(function () {
+					var imgsrc = $(this).find('img').attr('src');
+					var title = $(this).find('h3').text();
+					var url = $(this).find('div.url').text();
+		 
+					$(this).find('img').attr('src', $('#t2').attr('src'));
+					$(this).find('h3').text($('#t3').text());
+		 
+					$('#t2').attr('src', imgsrc);
+					$('#t3').text(title);
+					$('#t1').attr('href', url);
+		 
+		 
+					console.log(url);
+				});
+			});
+		</script>
+		</body>
+		</html>
